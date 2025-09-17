@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuhang (Jason) Sang | Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark blue-gray background */
+            color: #E5E7EB; /* Light gray text */
+        }
+        .glass-effect {
+            background: rgba(31, 41, 55, 0.5); /* Semi-transparent dark gray */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .accent-color {
+            color: #38bdf8; /* Sky blue */
+        }
+        .accent-bg {
+            background-color: #38bdf8;
+        }
+        .section-title {
+            @apply text-3xl font-bold mb-8 text-center accent-color tracking-wide;
+        }
+        .card {
+            @apply glass-effect p-6 rounded-xl transition-transform transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-sky-500/10;
+        }
+        .tag {
+            @apply inline-block bg-gray-700 text-sky-300 text-xs font-medium mr-2 mb-2 px-2.5 py-1 rounded-full;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-effect">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider">Yuhang Sang</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+            </div>
+             <div class="flex items-center space-x-4">
+                <a href="https://github.com/SyhiJason" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                </a>
+                <a href="mailto:sang0072@umn.edu" class="text-gray-400 hover:text-sky-400 transition-colors">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+        
+        <!-- Hero Section -->
+        <section id="home" class="min-h-[80vh] flex flex-col justify-center items-center text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">
+                    Yuhang (Jason) Sang
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-6">
+                    Building <span class="accent-color font-semibold">AI-powered</span> design workflows and <span class="accent-color font-semibold">scalable UI systems</span>.
+                </p>
+                <p class="text-md text-gray-400 max-w-2xl mx-auto">
+                    I design reusable component patterns, wire AI into design context, and streamline design-code handoff.
+                </p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="#projects" class="bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-sky-500 transition-all transform hover:scale-105">
+                        View My Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 fade-in">
+            <h2 class="section-title">About Me</h2>
+            <div class="card max-w-4xl mx-auto p-8">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <!-- Image Column -->
+                    <div class="w-48 md:w-1/4 flex-shrink-0">
+                        <!-- I have uploaded your photo. You can also replace the src with a new URL from an image hosting service like Imgur. -->
+                        <img src="https://i.imgur.com/8N4y2y5.jpg" alt="A photo of Yuhang Sang" class="rounded-full w-full h-auto shadow-lg ring-4 ring-gray-700">
+                    </div>
+                    <!-- Text Column -->
+                    <div class="flex-grow text-center md:text-left">
+                        <p class="text-lg text-gray-300 leading-relaxed">
+                            I'm a Computer Science undergraduate at the University of Minnesota, passionate about AI-assisted creation, design systems, and developer experience. I specialize in designing reusable component patterns (tokens, theming, interaction primitives), integrating AI into the design context, and simplifying the design-to-code handoff through structured schemas and developer-friendly documentation.
+                        </p>
+                        <div class="mt-6">
+                            <h4 class="text-xl font-semibold mb-3 text-sky-400">Focus Areas:</h4>
+                            <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                                <span class="tag">Design systems & adoption at scale</span>
+                                <span class="tag">AI-assisted creation workflows</span>
+                                <span class="tag">Design-Code handoff (schemas, tokens)</span>
+                                <span class="tag">Developer experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 fade-in">
+            <h2 class="section-title">Relevant Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8 relative">
+                <!-- Timeline line -->
+                <div class="absolute left-4 top-2 h-full w-0.5 bg-gray-700 hidden md:block"></div>
+                
+                <!-- DKU Experience -->
+                <div class="pl-10 md:pl-12 relative">
+                    <div class="absolute left-0 top-1.5 flex items-center justify-center bg-gray-800 rounded-full">
+                         <div class="w-8 h-8 bg-sky-500 rounded-full border-4 border-gray-800 flex items-center justify-center">
+                            <i data-lucide="flask-conical" class="w-4 h-4 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="text-sm text-gray-400">May 2025 - Aug 2025</p>
+                        <h3 class="text-xl font-semibold mt-1 text-sky-300">Research Intern - Duke Kunshan University (DKU)</h3>
+                        <p class="text-md text-gray-300 mt-2">Project: Dual-Alignment Scientific Writing Assistant (AI design workflow + design code handoff)</p>
+                        <ul class="list-disc list-inside mt-3 text-gray-400 space-y-2">
+                            <li>Built a reusable React component set with design tokens for consistency.</li>
+                            <li>Implemented AI workflows that produce structured JSON specs consumable by the UI.</li>
+                            <li>Shipped a design-code handoff path with schema-validated outputs and developer docs.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Zhejiang University Experience -->
+                 <div class="pl-10 md:pl-12 relative">
+                    <div class="absolute left-0 top-1.5 flex items-center justify-center bg-gray-800 rounded-full">
+                         <div class="w-8 h-8 bg-sky-500 rounded-full border-4 border-gray-800 flex items-center justify-center">
+                            <i data-lucide="flask-conical" class="w-4 h-4 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="text-sm text-gray-400">Jun 2024 - Sep 2024</p>
+                        <h3 class="text-xl font-semibold mt-1 text-sky-300">Research Intern - Zhejiang University</h3>
+                        <p class="text-md text-gray-300 mt-2">Project: Turn Fragmentation into Opportunities: Weaving HCI Artifacts into Design Implications via LLM Agent Collaboration</p>
+                        <ul class="list-disc list-inside mt-3 text-gray-400 space-y-2">
+                           <li>Prototyped multi-agent prompts to transform design briefs into component-ready proposals.</li>
+                           <li>Contributed evaluation rubrics for consistency and reuse.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- UMN Experience -->
+                 <div class="pl-10 md:pl-12 relative">
+                     <div class="absolute left-0 top-1.5 flex items-center justify-center bg-gray-800 rounded-full">
+                         <div class="w-8 h-8 bg-sky-500 rounded-full border-4 border-gray-800 flex items-center justify-center">
+                            <i data-lucide="brain-circuit" class="w-4 h-4 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                         <p class="text-sm text-gray-400">Sep 2024 - Dec 2024</p>
+                        <h3 class="text-xl font-semibold mt-1 text-sky-300">Explainable Solutions for Dreamer Models (UMN)</h3>
+                         <ul class="list-disc list-inside mt-3 text-gray-400 space-y-2">
+                            <li>Investigated complex model behavior and built visualization components.</li>
+                            <li>Delivered user-facing insights for stakeholders.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 fade-in">
+            <h2 class="section-title">Selected Project Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-sky-300">Adoption & Consistency at Scale</h3>
+                    <p class="mt-2 text-gray-400">Created tokens and reusable components to standardize visuals and interactions, with clear documentation for team adoption.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-sky-300">AI-Powered Workflows</h3>
+                    <p class="mt-2 text-gray-400">Connected AI to design context (user goals, personas) to generate structured specs that the UI could directly render.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-sky-300">Streamlined Design-Code Handoff</h3>
+                    <p class="mt-2 text-gray-400">Built schema-validated outputs and typed adapters, allowing designers to hand generated designs straight to developers.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-sky-300">Complex User-Facing Projects</h3>
+                    <p class="mt-2 text-gray-400">Delivered interactive visualizations and explanation components for reinforcement learning research.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                 <a href="https://github.com/SyhiJason/AugmentedCreativity-frontend" target="_blank" class="accent-bg text-white font-semibold px-8 py-4 rounded-lg hover:bg-sky-500 transition-all transform hover:scale-105 inline-block">
+                    View Main Project Code (AugmentedCreativity)
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 fade-in">
+            <h2 class="section-title">Skills</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-4 text-sky-300 flex items-center"><i data-lucide="palette" class="w-5 h-5 mr-2"></i> Design Systems & Handoff</h3>
+                        <div class="flex flex-wrap">
+                            <span class="tag">Design Tokens (CSS variables)</span>
+                            <span class="tag">Component Libraries</span>
+                            <span class="tag">Interaction Patterns</span>
+                            <span class="tag">Typed Adapters</span>
+                            <span class="tag">Schema Design & Validation</span>
+                            <span class="tag">Developer Docs</span>
+                        </div>
+                    </div>
+                     <div class="card">
+                        <h3 class="text-xl font-semibold mb-4 text-sky-300 flex items-center"><i data-lucide="cpu" class="w-5 h-5 mr-2"></i> AI & Workflows</h3>
+                         <div class="flex flex-wrap">
+                            <span class="tag">LLM Orchestration</span>
+                            <span class="tag">Prompt/Response Schemas</span>
+                            <span class="tag">Alignment Scoring</span>
+                            <span class="tag">Explainability Basics</span>
+                        </div>
+                    </div>
+                     <div class="card">
+                        <h3 class="text-xl font-semibold mb-4 text-sky-300 flex items-center"><i data-lucide="code" class="w-5 h-5 mr-2"></i> Frontend & Tooling</h3>
+                         <div class="flex flex-wrap">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">SQL (MySQL)</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                     <div class="card">
+                        <h3 class="text-xl font-semibold mb-4 text-sky-300 flex items-center"><i data-lucide="users" class="w-5 h-5 mr-2"></i> Communication</h3>
+                         <div class="flex flex-wrap">
+                            <span class="tag">Cross-functional collaboration</span>
+                            <span class="tag">Research writing (LaTeX)</span>
+                            <span class="tag">Stakeholder demos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education" class="py-20 fade-in">
+            <h2 class="section-title">Education</h2>
+            <div class="card max-w-2xl mx-auto text-center">
+                <h3 class="text-2xl font-bold text-sky-300">University of Minnesota Twin Cities</h3>
+                <p class="text-lg mt-2">B.A. in Computer Science</p>
+                <p class="text-gray-400 mt-1">Expected Dec 2025 | GPA: 3.76</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2025 Yuhang (Jason) Sang. All Rights Reserved.</p>
+            <div class="mt-4 flex justify-center items-center space-x-6">
+                <a href="https://github.com/SyhiJason" target="_blank" class="hover:text-sky-400 transition-colors">
+                    GitHub
+                </a>
+                <span>&bull;</span>
+                 <a href="mailto:sang0072@umn.edu" class="hover:text-sky-400 transition-colors">
+                    sang0072@umn.edu
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Fade-in animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        const fadeIns = document.querySelectorAll('.fade-in');
+        fadeIns.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+
