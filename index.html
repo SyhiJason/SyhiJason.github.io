@@ -12,16 +12,16 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #111827; /* Dark blue-gray background */
-            color: #E5E7EB; /* Light gray text */
+            background-color: #111827;
+            color: #E5E7EB;
         }
         .glass-effect {
-            background: rgba(31, 41, 55, 0.5); /* Semi-transparent dark gray */
+            background: rgba(31, 41, 55, 0.5);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .accent-color {
-            color: #38bdf8; /* Sky blue */
+            color: #38bdf8;
         }
         .accent-bg {
             background-color: #38bdf8;
@@ -54,9 +54,12 @@
             <a href="#" class="text-xl font-bold tracking-wider">Yuhang Sang</a>
             <div class="hidden md:flex items-center space-x-6">
                 <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#interests" class="hover:text-sky-400 transition-colors">Interests</a>
                 <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
                 <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
                 <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+                <a href="#education" class="hover:text-sky-400 transition-colors">Education</a>
+                <a href="cv-re.pdf" target="_blank" class="hover:text-sky-400 transition-colors">CV</a>
             </div>
              <div class="flex items-center space-x-4">
                 <a href="https://github.com/SyhiJason" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors">
@@ -78,14 +81,17 @@
                     Yuhang (Jason) Sang
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-300 mb-6">
-                    Building <span class="accent-color font-semibold">AI-powered</span> design workflows and <span class="accent-color font-semibold">scalable UI systems</span>.
+                    Researching <span class="accent-color font-semibold">Human–AI Alignment</span> and building <span class="accent-color font-semibold">AI-powered design workflows</span>.
                 </p>
                 <p class="text-md text-gray-400 max-w-2xl mx-auto">
-                    I design reusable component patterns, wire AI into design context, and streamline design-code handoff.
+                    I design multi-agent collaboration frameworks, explainable AI tools, and developer-friendly workflows to align human cognition with AI assistance.
                 </p>
                 <div class="mt-8 flex justify-center gap-4">
                     <a href="#projects" class="bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-sky-500 transition-all transform hover:scale-105">
                         View My Projects
+                    </a>
+                    <a href="cv-re.pdf" target="_blank" class="accent-bg text-white font-semibold px-6 py-3 rounded-lg hover:bg-sky-500 transition-all transform hover:scale-105">
+                        Download CV
                     </a>
                 </div>
             </div>
@@ -96,32 +102,28 @@
             <h2 class="section-title">About Me</h2>
             <div class="card max-w-4xl mx-auto p-8">
                 <div class="flex flex-col md:flex-row items-center gap-12">
-                    <!-- Image Column -->
                     <div class="w-48 md:w-1/4 flex-shrink-0">
-                        <!-- 
-                            重要提示:
-                            这张照片现在由本地文件提供。
-                            请确保你上传了一张名为 "profile.jpg" 的照片到这个 GitHub 仓库的根目录。
-                            详细步骤请看 README_Final_CN.md 文件。
-                        -->
                         <img src="profile.jpg" alt="A photo of Yuhang Sang" class="rounded-full w-full h-auto shadow-lg ring-4 ring-gray-700">
                     </div>
-                    <!-- Text Column -->
                     <div class="flex-grow text-center md:text-left">
                         <p class="text-lg text-gray-300 leading-relaxed">
-                            I'm a Computer Science undergraduate at the University of Minnesota, passionate about AI-assisted creation, design systems, and developer experience. I specialize in designing reusable component patterns, integrating AI into the design context, and simplifying the design-to-code handoff through structured schemas and developer-friendly documentation.
+                            I'm a Computer Science undergraduate at the University of Minnesota, passionate about Human–AI alignment, AI-assisted creation, and HCI. I specialize in multi-agent systems, visualization, and design-to-code handoff.
                         </p>
-                        <div class="mt-6">
-                            <h4 class="text-xl font-semibold mb-3 text-sky-400">Focus Areas:</h4>
-                            <div class="flex flex-wrap gap-3 justify-center md:justify-start">
-                                <span class="tag">Design systems & adoption at scale</span>
-                                <span class="tag">AI-assisted creation workflows</span>
-                                <span class="tag">Design-Code handoff (schemas, tokens)</span>
-                                <span class="tag">Developer experience</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Research Interests Section -->
+        <section id="interests" class="py-20 fade-in">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="card max-w-4xl mx-auto p-8">
+                <ul class="list-disc list-inside text-gray-300 space-y-3 text-lg">
+                    <li>Human-Centered AI</li>
+                    <li>Human–AI Alignment</li>
+                    <li>AI for Human Enhancement</li>
+                    <li>User Research (Quantitative & Qualitative)</li>
+                </ul>
             </div>
         </section>
 
@@ -277,42 +279,33 @@
             </div>
         </section>
 
-    </main>
+        </main>
     
     <!-- Footer -->
     <footer class="border-t border-gray-800 mt-20">
         <div class="container mx-auto px-6 py-8 text-center text-gray-500">
             <p>&copy; 2025 Yuhang (Jason) Sang. All Rights Reserved.</p>
             <div class="mt-4 flex justify-center items-center space-x-6">
-                <a href="https://github.com/SyhiJason" target="_blank" class="hover:text-sky-400 transition-colors">
-                    GitHub
-                </a>
+                <a href="https://github.com/SyhiJason" target="_blank" class="hover:text-sky-400 transition-colors">GitHub</a>
                 <span>&bull;</span>
-                 <a href="mailto:sang0072@umn.edu" class="hover:text-sky-400 transition-colors">
-                    sang0072@umn.edu
-                </a>
+                <a href="mailto:sang0072@umn.edu" class="hover:text-sky-400 transition-colors">sang0072@umn.edu</a>
+                <span>&bull;</span>
+                <a href="cv-re.pdf" target="_blank" class="hover:text-sky-400 transition-colors">Download CV</a>
             </div>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
-        
-        // Fade-in animation on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                 }
             });
-        }, {
-            threshold: 0.1
-        });
-
+        }, { threshold: 0.1 });
         const fadeIns = document.querySelectorAll('.fade-in');
         fadeIns.forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
-
-
